@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1f90df3c86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/estilos.css">
+    
+</head>
+<body>
+    <button class="back" onclick="history.back()"><i class="fa-solid fa-angle-left"></i></button>
+    <img src="" alt="" id="poster" style="display: none;">
+    <main id="detalle">
+    <h1 id="titulo"></h1> <p id="fecha"></p>
+    <div id="grupodetalle">
+    <div id="paleta" class="paletadetalle"></div>
+    <div id="datoscolor"></div></div>
+    <button id="guardar">+</button>
+    </main>
+    
+    <script src="//cdn.jsdelivr.net/npm/pouchdb@7.3.0/dist/pouchdb.min.js"></script>
+    <script src="../app/script.js"></script>
+</body>
+</html>

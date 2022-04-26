@@ -1,0 +1,269 @@
+@font-face 
+  font-family: 'Poppins regular'
+  src: url('fonts/Poppins-Regular.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+@font-face 
+  font-family: 'Poppins bold'
+  src: url('fonts/Poppins-Bold.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+
+$tipobase: 'Poppins regular'
+$tipotitulos: 'Poppins bold'
+main
+  display: flex
+  flex-direction: column
+  align-items: center
+#carta
+  display: flex
+  flex-direction: column
+  align-items: center
+a
+  font-family: $tipobase
+  color: #000
+nav
+  font-family: $tipobase
+  ul
+    display: flex
+    flex-direction: row 
+    position: absolute
+    top: 20px
+    left: 20px
+    li
+      padding: 5px 10px
+      border-radius: 50px
+      background-color: #fff
+      border: solid 1px #000
+      margin-right: 20px
+.back
+  position: absolute
+  top: 20px
+  left: 20px
+h1
+  font-family: $tipotitulos
+  font-size: 2.5rem
+  margin-top: 15vh
+  margin-bottom: 15px
+#poster
+    width: 200px
+    border-radius: 5%
+// #paleta
+//     width: 250px
+.container
+    width: 250px
+    display: flex
+    flex-direction: row
+    padding: 10px 0
+    // border-radius: 5% 
+.color
+  width: 25%
+  height: 50px 
+button
+  width: 50px
+  height: 50px
+  background-color: #fff
+  border-radius: 50%
+  border: 1px solid #000
+  text-align: center
+  font-family: $tipobase
+  font-size: 30px
+  cursor: pointer
+h2
+  font-family: $tipotitulos
+  font-size: 1.5rem
+#detalle
+  margin-left: 12%
+  display: block
+  #guardar
+    position: absolute
+    top: 40%
+    margin-left: 75%
+.paletadetalle
+  .container
+    width: 80%
+    display: flex
+    flex-direction: row
+    height: 180px
+    
+  .color
+    height: 100%
+    width: 25%
+#datoscolor
+  font-size: 1rem
+  ul
+    display: flex
+    flex-direction: row
+    width: 80%
+    justify-content: space-between
+    li
+      width: 25%
+      padding-left: 5px
+  h4
+    font-family: $tipotitulos
+  p
+    font-family: $tipobase
+#biblioteca
+  margin-left: 20%
+  margin-top: 90px
+  ul
+    display: flex
+    flex-direction: row
+    width: 70%
+    justify-content: space-between
+    font-size: 0.7rem
+    visibility: hidden
+    margin-top: -80px
+    li
+      background-color: #fff
+      width: 25%
+      padding-left: 2px
+      padding-bottom: 5px
+  h3, h4
+    font-family: $tipotitulos
+    margin-bottom: 5px
+    font-size: 0.7rem
+  p
+    font-family: $tipobase
+  .container
+    width: 70%
+    display: flex
+    flex-direction: row
+    height: 11vw
+    
+  .color
+    height: 100%
+    width: 25%
+article
+  position: relative
+  h2
+    margin-top: 15px
+  button
+    position: absolute
+    top: 8vw
+    margin-left: 75%
+
+#pagactual
+  background-color: #000
+  color: #fff
+.hamburguesa
+  display: none
+/*Tablet vertical y móvil*/ 
+@media only screen and (max-width: 720px)
+  h1
+    font-size: 1.5rem
+  h2
+    font-size: 1.1rem
+  button
+    width: 40px
+    height: 40px
+    font-size: 25px
+  .paletadetalle
+    height: 400px
+    width: 30%
+    .container
+      display: flex
+      flex-direction: column
+      height: 70vh
+      .color
+        height: 25%
+        width: 100%
+  #datoscolor
+    ul
+      display: flex
+      flex-direction: column
+      width: 100%
+      justify-content: space-between
+      height: 70vh
+      li
+        width: 100%
+        padding-left: 5px
+        height: 25%
+        h4
+          margin: 5px 0 3px 0
+  #grupodetalle
+    display: flex
+    flex-direction: row
+  #detalle
+    #guardar
+      top: 15%
+  #biblioteca
+    display: flex
+    flex-direction: row
+    width: 100%
+    margin: 50px 0 0 50px
+    padding-right: 50px
+    ul
+      display: flex
+      flex-direction: column
+      width: 100%
+      height: 70vh
+      justify-content: flex-end
+      font-size: 0.7rem
+      visibility: hidden
+      margin-top: -72vh
+      li
+        background-color: transparent
+        width: 100%
+        height: 25%
+        padding: 0
+        p
+          background-color: #fff
+          padding-bottom: 2px
+        h3, h4
+          margin: 0
+          background-color: #fff
+          padding: 2px
+    .container
+      width: 100%
+      display: flex
+      flex-direction: column
+      height: 70vh
+    .color
+      height: 25%
+      width: 80%
+  article
+    height: 85vh
+    min-width: 200px
+    button
+      position: absolute
+      top: 80vh
+      margin-left: 30%
+  .hamburguesa 
+    display: block
+    position: fixed
+    z-index: 100
+    top: 1rem
+    left: 1rem
+    padding: 4px
+    border: black solid 1px
+    background: white
+  .closeIcon 
+    display: none
+  nav
+    ul
+      transform: translateY(-100%)
+      transition: transform 0.2s
+      display: flex
+      flex-direction: column 
+      position: absolute
+      align-content: center
+      top: 0px
+      left: 0px
+      z-index: 99
+      width: 60%
+      background-color: rgba(255,255,255,0.7)
+      height: 100%
+      padding-top: 50px
+      li
+        padding: 5px 10px
+        text-align: center
+        border-radius: 50px
+        background-color: #fff
+        border: solid 1px #000
+        margin-left: 30px
+        margin-top: 30px
+        max-width: 60px
+        font-size: 0.7em
+  .showMenu 
+    transform: translateY(0)

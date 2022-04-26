@@ -1,0 +1,459 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Poppins regular';
+  src: url("fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins bold';
+  src: url("fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+#logo {
+  width: 20%;
+  position: absolute;
+  top: 5px;
+  margin-left: 40%;
+}
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#carta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  font-family: "Poppins regular";
+  color: #000;
+}
+
+nav {
+  font-family: "Poppins regular";
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+nav ul li {
+  padding: 5px 10px;
+  border-radius: 50px;
+  background-color: #fff;
+  border: solid 1px #000;
+  margin-right: 20px;
+}
+
+.back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+h1 {
+  font-family: "Poppins bold";
+  font-size: 2.5rem;
+  margin-top: 15vh;
+  margin-bottom: 15px;
+}
+
+#poster {
+  width: 200px;
+  border-radius: 5%;
+}
+
+.container {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 0;
+}
+
+.color {
+  width: 25%;
+  height: 50px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #000;
+  text-align: center;
+  font-family: "Poppins regular";
+  font-size: 30px;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Poppins bold";
+  font-size: 1.5rem;
+}
+
+#detalle {
+  margin-left: 12%;
+  display: block;
+}
+
+#detalle #guardar {
+  position: absolute;
+  top: 40%;
+  margin-left: 75%;
+}
+
+.paletadetalle .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 180px;
+}
+
+.paletadetalle .color {
+  height: 100%;
+  width: 25%;
+}
+
+#datoscolor {
+  font-size: 1rem;
+}
+
+#datoscolor ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#datoscolor ul li {
+  width: 25%;
+  padding-left: 5px;
+}
+
+#datoscolor h4 {
+  font-family: "Poppins bold";
+}
+
+#datoscolor p {
+  font-family: "Poppins regular";
+}
+
+#biblioteca {
+  margin-left: 20%;
+  margin-top: 90px;
+}
+
+#biblioteca ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.7rem;
+  visibility: hidden;
+  margin-top: -80px;
+}
+
+#biblioteca ul li {
+  background-color: #fff;
+  width: 25%;
+  padding-left: 2px;
+  padding-bottom: 5px;
+}
+
+#biblioteca h3, #biblioteca h4 {
+  font-family: "Poppins bold";
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+}
+
+#biblioteca p {
+  font-family: "Poppins regular";
+}
+
+#biblioteca .container {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 11vw;
+}
+
+#biblioteca .color {
+  height: 100%;
+  width: 25%;
+}
+
+article {
+  position: relative;
+}
+
+article h2 {
+  margin-top: 15px;
+}
+
+article button {
+  position: absolute;
+  top: 8vw;
+  margin-left: 75%;
+}
+
+#pagactual {
+  background-color: #000;
+  color: #fff;
+}
+
+.hamburguesa {
+  display: none;
+}
+
+/*Tablet vertical y móvil*/
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  button {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
+  .paletadetalle {
+    height: 400px;
+    width: 30%;
+  }
+  .paletadetalle .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 70vh;
+  }
+  .paletadetalle .container .color {
+    height: 25%;
+    width: 100%;
+  }
+  #datoscolor ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 70vh;
+  }
+  #datoscolor ul li {
+    width: 100%;
+    padding-left: 5px;
+    height: 25%;
+  }
+  #datoscolor ul li h4 {
+    margin: 5px 0 3px 0;
+  }
+  #grupodetalle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #detalle #guardar {
+    top: 15%;
+  }
+  #biblioteca {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    margin: 50px 0 0 50px;
+    padding-right: 50px;
+  }
+  #biblioteca ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 0.7rem;
+    visibility: hidden;
+    margin-top: -72vh;
+  }
+  #biblioteca ul li {
+    background-color: transparent;
+    width: 100%;
+    height: 25%;
+    padding: 0;
+  }
+  #biblioteca ul li p {
+    background-color: #fff;
+    padding-bottom: 2px;
+  }
+  #biblioteca ul li h3, #biblioteca ul li h4 {
+    margin: 0;
+    background-color: #fff;
+    padding: 2px;
+  }
+  #biblioteca .container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 70vh;
+  }
+  #biblioteca .color {
+    height: 25%;
+    width: 80%;
+  }
+  article {
+    height: 85vh;
+    min-width: 200px;
+  }
+  article button {
+    position: absolute;
+    top: 80vh;
+    margin-left: 30%;
+  }
+  .hamburguesa {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    left: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+  }
+  .closeIcon {
+    display: none;
+  }
+  nav ul {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: calc(100% - 50px);
+    padding-top: 50px;
+  }
+  nav ul li {
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #fff;
+    border: solid 1px #000;
+    margin-left: 30px;
+    margin-top: 30px;
+    max-width: 60px;
+    font-size: 0.7em;
+  }
+  .showMenu {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  #logo{
+    width: 40%;
+    top: 10px;
+    margin-left: 30%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

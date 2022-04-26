@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemacolor</title>
+    <script src="https://kit.fontawesome.com/1f90df3c86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/estilos.css">
+    
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="menuItem" id="pagactual">home</li>
+            <li class="menuItem"><a href="html/mycolors.html">myColors</a></li>
+            <li class="menuItem"><a href="info.html">info</a></li>
+        </ul>
+        <button class="hamburguesa">
+            <i class="menuIcon fa-solid fa-bars"></i>
+            <i class="closeIcon fa-solid fa-xmark"></i>
+        </button>
+    </nav>
+    <img src="assets/logo.png" alt="Cinemacolor" id="logo">
+<main>
+<h1 id="titulo"></h1> <p id="fecha"></p>
+<a href="html/detalle.html">
+    <div id="carta">
+<img src="" alt="" id="poster">
+<div id="paleta"></div>
+</div></a>
+<div id="datoscolor" style="display:none;"></div>
+<button id="guardar">+</button>
+</main>
+<script src="//cdn.jsdelivr.net/npm/pouchdb@7.3.0/dist/pouchdb.min.js"></script>
+<script src="app/script.js"></script>
+</body>
+</html>
