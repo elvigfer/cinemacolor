@@ -15,7 +15,15 @@
 li{
   text-decoration: none;
 }
-
+h2{
+  font-size: 1.5rem;
+  font-family: "Poppins bold";
+  margin: 10% 10% 0 10%;
+}
+p{
+  font-family: "Poppins regular";
+  margin: 5% 10%;
+}
 #logo {
   width: 20%;
   position: absolute;
