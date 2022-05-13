@@ -12,12 +12,15 @@
   font-weight: normal;
   font-style: normal;
 }
-#logo {
+#logo{
   width: 20%;
-  position: absolute;
-  top: 5px;
   margin-left: 40%;
 }
+#info{
+  font-family: "Poppins regular";
+  margin: 5% 10%;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +50,7 @@ main {
 a {
   font-family: "Poppins regular";
   color: #000;
+  text-decoration: none;
 }
 
 nav {
@@ -72,6 +76,7 @@ nav ul li {
   background-color: #fff;
   border: solid 1px #000;
   margin-right: 20px;
+  text-decoration: none;
 }
 
 .back {
@@ -83,7 +88,7 @@ nav ul li {
 h1 {
   font-family: "Poppins bold";
   font-size: 2.5rem;
-  margin-top: 15vh;
+  margin-top: 0px;
   margin-bottom: 15px;
 }
 
@@ -129,6 +134,7 @@ h2 {
 #detalle {
   margin-left: 12%;
   display: block;
+  margin-top: 70px;
 }
 
 #detalle #guardar {
@@ -190,7 +196,7 @@ h2 {
   margin-top: 90px;
 }
 
-#biblioteca ul {
+#biblioteca .codigos, #biblioteca #codigos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,7 +213,7 @@ h2 {
   margin-top: -80px;
 }
 
-#biblioteca ul li {
+#biblioteca .codigos li, #biblioteca #codigos li {
   background-color: #fff;
   width: 25%;
   padding-left: 2px;
@@ -241,15 +247,15 @@ h2 {
   width: 25%;
 }
 
-article {
+.item {
   position: relative;
 }
 
-article h2 {
+.item h2 {
   margin-top: 15px;
 }
 
-article button {
+.item button {
   position: absolute;
   top: 8vw;
   margin-left: 75%;
@@ -263,7 +269,9 @@ article button {
 .hamburguesa {
   display: none;
 }
-
+#about{
+  margin: 65px 0 0 10%;
+}
 /*Tablet vertical y móvil*/
 @media only screen and (max-width: 720px) {
   h1 {
@@ -341,7 +349,7 @@ article button {
     margin: 50px 0 0 50px;
     padding-right: 50px;
   }
-  #biblioteca ul {
+  #biblioteca .codigos, #biblioteca #codigos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -358,17 +366,17 @@ article button {
     visibility: hidden;
     margin-top: -72vh;
   }
-  #biblioteca ul li {
+  #biblioteca .codigos li, #biblioteca #codigos li {
     background-color: transparent;
     width: 100%;
     height: 25%;
     padding: 0;
   }
-  #biblioteca ul li p {
+  #biblioteca .codigos li p, #biblioteca #codigos li p {
     background-color: #fff;
     padding-bottom: 2px;
   }
-  #biblioteca ul li h3, #biblioteca ul li h4 {
+  #biblioteca .codigos li h3, #biblioteca .codigos li h4, #biblioteca #codigos li h3, #biblioteca #codigos li h4 {
     margin: 0;
     background-color: #fff;
     padding: 2px;
@@ -388,11 +396,11 @@ article button {
     height: 25%;
     width: 80%;
   }
-  article {
+  .item {
     height: 85vh;
     min-width: 200px;
   }
-  article button {
+  .item button {
     position: absolute;
     top: 80vh;
     margin-left: 30%;
@@ -451,9 +459,8 @@ article button {
             transform: translateY(0);
   }
   #logo{
-    width: 40%;
-    top: 10px;
-    margin-left: 30%;
+    width: 50%;
+    margin-left: 25%
   }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -14,13 +14,13 @@ function renderUsers(){
         
             colors.forEach(element => {
                 let color = `
-                            <article>
-                                <h2>${element.doc.title}</h2>
+                            <li class= "item">
+                                <h2 class= "name">${element.doc.title}</h2>
                                 <div class= "grupo">
                                 ${element.doc.hex}
                                 ${element.doc.codes}</div>
                                 <button class= "borrar">-</button>
-                            </article>`;
+                            </li>`;
                 caja.innerHTML += color;
                 let btnBorrar = document.getElementsByClassName("borrar");
                 //El borrado solo funciona después de refrescar la base de datos y la página.
@@ -67,3 +67,7 @@ menuItems.forEach(
       menuItem.addEventListener("click", toggleMenu);
     }
   )
+
+  var monkeyList = new List('test-list', { 
+    valueNames: ['name']
+  });
