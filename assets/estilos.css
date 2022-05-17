@@ -333,6 +333,7 @@ h2 {
     width: 100%;
     padding-left: 5px;
     height: 25%;
+    text-decoration: none;
   }
   #datoscolor ul li h4 {
     margin: 5px 0 3px 0;
@@ -465,6 +466,7 @@ h2 {
     margin-top: 30px;
     max-width: 60px;
     font-size: 0.7em;
+    text-decoration: none;
   }
   .showMenu {
     -webkit-transform: translateY(0);
