@@ -19,7 +19,7 @@ li{
 h2{
   font-size: 1.5rem;
   font-family: "Poppins bold";
-  margin: 10% 10% 0 10%;
+  margin: 10% 10% 0 0;
 }
 p{
   font-family: "Poppins regular";
@@ -311,6 +311,8 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 70vh;
+    margin: 0;
+    width: 100%;
   }
   .paletadetalle .container .color {
     height: 25%;
@@ -349,7 +351,8 @@ h2 {
             flex-direction: row;
   }
   #detalle #guardar {
-    top: 15%;
+    top: 12%;
+    margin-left: 70%;
   }
   #biblioteca {
     display: -webkit-box;
@@ -371,7 +374,7 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    width: 80%;
     height: 70vh;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -379,6 +382,8 @@ h2 {
     font-size: 0.7rem;
     visibility: hidden;
     margin-top: -72vh;
+    
+    padding-left: 0px;
   }
   #biblioteca .codigos li, #biblioteca #codigos li {
     background-color: transparent;
